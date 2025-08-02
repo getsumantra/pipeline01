@@ -15,6 +15,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/testvm2'
     backendServiceArm: 'pipeline-ka-service-connection'
     backendAzureRmStorageAccountName: 'pipelineresources1550'
     backendAzureRmContainerName: 'container'
